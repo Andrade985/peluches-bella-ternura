@@ -1,0 +1,609 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #4a3728;
+    background-color: #fff8f2;
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 50px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 225, 235, 0.90),
+            rgba(255, 225, 235, 0.90)
+        ),
+        url("../images/fondo-header.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 4px solid #d9657d;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #4a3728;
+}
+
+.logo span {
+    font-size: 42px;
+}
+
+.logo h2 {
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.logo small {
+    font-size: 13px;
+    color: #684b4f;
+}
+
+
+/* MENÚ */
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.navbar a {
+    display: block;
+
+    padding: 10px 14px;
+
+    text-decoration: none;
+
+    color: #4a3728;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #d15c76;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    padding: 80px 50px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 229, 236, 0.84),
+            rgba(255, 229, 236, 0.84)
+        ),
+        url("../images/fondo-inicio.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* CONTENIDO DEL INICIO */
+
+.hero-contenido {
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.bienvenida {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    background-color: white;
+
+    color: #d15c76;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 46px;
+
+    line-height: 1.15;
+
+    color: #5a3d40;
+
+    margin-bottom: 20px;
+}
+
+.texto-hero {
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #76595b;
+
+    max-width: 550px;
+}
+
+
+/* BOTONES */
+
+.botones-hero {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #d9657d;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #bd5068;
+}
+
+.btn-secundario {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: white;
+
+    color: #d15c76;
+
+    text-decoration: none;
+
+    border: 2px solid #d9657d;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn-secundario:hover {
+    background-color: #d9657d;
+
+    color: white;
+}
+
+
+/* =========================
+   TARJETAS DEL INICIO
+========================= */
+
+.hero-decoracion {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.tarjeta-hero {
+    width: 220px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border-radius: 15px;
+
+    border: 1px solid #f0d5da;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    font-size: 38px;
+}
+
+.icono-grande {
+    font-size: 45px;
+
+    margin-bottom: 8px;
+}
+
+.tarjeta-hero strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 17px;
+
+    color: #5a3d40;
+}
+
+.tarjeta-hero p {
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    color: #76595b;
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #fff8f2;
+}
+
+.productos h2,
+.nosotros h2,
+.testimonios h2 {
+    font-size: 30px;
+
+    color: #5a3d40;
+
+    margin-bottom: 12px;
+}
+
+.texto-seccion {
+    color: #76595b;
+
+    margin-bottom: 30px;
+}
+
+.grid-productos {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.producto {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    border: 1px solid #f0d5da;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.producto img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #5a3d40;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    color: #76595b;
+
+    margin-bottom: 12px;
+}
+
+.precio {
+    color: #d15c76;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    max-width: 1100px;
+
+    margin: 10px auto 60px;
+
+    padding: 0 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.beneficio {
+    text-align: center;
+
+    padding: 25px 20px;
+
+    background-color: white;
+
+    border: 1px solid #f0d5da;
+
+    border-radius: 10px;
+}
+
+.icono {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.beneficio h3 {
+    color: #5a3d40;
+
+    margin-bottom: 8px;
+}
+
+.beneficio p {
+    color: #76595b;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SOBRE NOSOTROS
+========================= */
+
+.nosotros {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #ffe5ec;
+}
+
+.nosotros p {
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+
+    color: #76595b;
+}
+
+
+/* =========================
+   TESTIMONIOS
+========================= */
+
+.testimonios {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #fff8f2;
+}
+
+.testimonios-contenedor {
+    max-width: 1000px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.testimonio {
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #f0d5da;
+
+    border-radius: 10px;
+}
+
+.testimonio p {
+    font-style: italic;
+
+    color: #76595b;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.testimonio strong {
+    color: #d15c76;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+.footer {
+    background-color: #4a3728;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #e8d9d2;
+}
+
+
+/* =========================
+   DISEÑO PARA CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding: 55px 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .texto-hero {
+        font-size: 17px;
+    }
+
+    .botones-hero {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-decoracion {
+        flex-direction: row;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-hero {
+        width: 180px;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonios-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
