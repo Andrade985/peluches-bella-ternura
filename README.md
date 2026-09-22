@@ -1,0 +1,1 @@
+Peluches Bella Ternura es una página web creada para presentar y promocionar diferentes tipos de peluches. El proyecto busca ofrecer una página sencilla, agradable y fácil de navegar para conocer los productos, sus precios y características.
